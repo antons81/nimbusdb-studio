@@ -70,6 +70,16 @@
     background: radial-gradient(ellipse at center, rgba(52,211,153,0.15) 0%, transparent 65%);
     animation: floatC 16s ease-in-out infinite;
   }
+ .btn-buy.appstore {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(124,58,237,0.35);
+ }
+.btn-buy.appstore:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(124,58,237,0.45);
+  filter: brightness(1.08);
+ }
 
   @keyframes floatA { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(60px,40px) scale(1.05)} }
   @keyframes floatB { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-40px,60px) scale(1.08)} }
@@ -559,10 +569,10 @@
           <li>Native SwiftUI — zero overhead</li>
         </ul>
         <div class="card-pricing">
-          <span class="price-main">€9.99</span>
+          <span class="price-main">€5.99</span>
           <span class="price-period">one-time</span>
         </div>
-        <a href="https://apps.apple.com/de/app/envio-env-manager/id6768711101?l=en-GB&mt=12" class="btn-buy glass lemonsqueezy-button">Available on AppStore</a>
+        <a href="https://apps.apple.com/de/app/envio-env-manager/id6768711101?l=en-GB&mt=12" class="btn-buy appstore">Available on AppStore</a>
       </div>
 
            <!-- Snippio -->
@@ -577,7 +587,7 @@
            <li>MVVM / VIPER / TCA templates</li>
            <li>My Snippets with iCloud sync</li>
         </ul>
-        <a href="https://apps.apple.com/de/app/snippio-dev-components/id6767014501?l=en-GB&mt=12" class="btn-buy glass lemonsqueezy-button">Available on AppStore</a>
+        <a href="https://apps.apple.com/de/app/snippio-dev-components/id6767014501?l=en-GB&mt=12" class="btn-buy appstore">Available on AppStore</a>
       </div>
 
     </div>
