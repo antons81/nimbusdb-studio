@@ -326,12 +326,17 @@
   .price-main {
     font-family: 'Outfit', sans-serif;
     font-size: 32px; font-weight: 700;
-    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     letter-spacing: -1px;
     line-height: 1;
   }
   .price-period {
-    font-size: 13px; color: var(--text-muted);
+    font-size: 13px;
+    color: var(--accent2);
+    opacity: 0.8;
     margin-bottom: 4px;
   }
   .price-plans {
@@ -575,7 +580,7 @@
         <a href="https://apps.apple.com/de/app/envio-env-manager/id6768711101?l=en-GB&mt=12" class="btn-buy appstore">Available on AppStore</a>
       </div>
 
-           <!-- Snippio -->
+      <!-- Snippio -->
       <div class="card">
         <div class="card-icon clear"><img src="snippio.png" width="40" height="40" style="border-radius:12px"></div>
         <span class="card-tag">Dev Components</span>
