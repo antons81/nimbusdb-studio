@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>NimbusDB Studio</title>
+        <item>
+            <title>Version 1.0</title>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <pubDate>Mon, 25 May 2026 12:00:00 +0000</pubDate>
+            <enclosure
+                url="https://antons81.github.io/nimbusdb-studio/NimbusDBStudio-1.0.dmg"
+                sparkle:edSignature="hLFb8Qe046mwmpTKBjAGWfJQ9sLELReUBCWq7sRqyMS/T1g1GeP4KOksY6rdxS0i/7/XaDdBQpG6ClUIoIpgBA=="
+                length="3162758"
+                type="application/octet-stream"
+            />
+        </item>
+    </channel>
+</rss>
