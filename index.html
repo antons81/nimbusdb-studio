@@ -38,7 +38,6 @@
     overflow-x: hidden;
   }
 
-  /* ─── BACKGROUND MESH ─── */
   .bg-mesh {
     position: fixed;
     inset: 0;
@@ -70,25 +69,23 @@
     background: radial-gradient(ellipse at center, rgba(52,211,153,0.15) 0%, transparent 65%);
     animation: floatC 16s ease-in-out infinite;
   }
- .btn-buy.appstore {
-  background: linear-gradient(135deg, #7c3aed, #a78bfa);
-  color: #fff;
-  box-shadow: 0 4px 20px rgba(124,58,237,0.35);
- }
-.btn-buy.appstore:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(124,58,237,0.45);
-  filter: brightness(1.08);
- }
+  .btn-buy.appstore {
+    background: linear-gradient(135deg, #7c3aed, #a78bfa);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(124,58,237,0.35);
+  }
+  .btn-buy.appstore:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(124,58,237,0.45);
+    filter: brightness(1.08);
+  }
 
   @keyframes floatA { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(60px,40px) scale(1.05)} }
   @keyframes floatB { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-40px,60px) scale(1.08)} }
   @keyframes floatC { 0%,100%{transform:translate(-50%,-50%) scale(1)} 50%{transform:translate(-47%,-53%) scale(1.1)} }
 
-  /* ─── LAYOUT ─── */
   .wrap { position: relative; z-index: 1; max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 
-  /* ─── NAV ─── */
   nav {
     position: sticky; top: 0; z-index: 100;
     padding: 16px 0;
@@ -123,7 +120,6 @@
   }
   .nav-links a:hover { color: var(--accent); }
 
-  /* ─── HERO ─── */
   .hero {
     padding: 100px 0 80px;
     text-align: center;
@@ -193,7 +189,6 @@
     align-self: stretch;
   }
 
-  /* ─── SECTION TITLE ─── */
   .section-head { text-align: center; margin-bottom: 56px; }
   .section-head h2 {
     font-family: 'Outfit', sans-serif;
@@ -208,7 +203,6 @@
     font-weight: 300;
   }
 
-  /* ─── PRODUCTS GRID ─── */
   .products { padding: 80px 0; }
   .products-grid {
     display: grid;
@@ -216,7 +210,6 @@
     gap: 24px;
   }
 
-  /* ─── PRODUCT CARD ─── */
   .card {
     background: var(--glass-bg);
     backdrop-filter: var(--glass-blur);
@@ -297,7 +290,6 @@
     margin-bottom: 24px;
   }
 
-  /* features list */
   .features {
     list-style: none;
     margin-bottom: 28px;
@@ -318,7 +310,6 @@
     background-size: cover;
   }
 
-  /* pricing row */
   .card-pricing {
     display: flex; align-items: flex-end; gap: 6px;
     margin-bottom: 20px;
@@ -356,7 +347,6 @@
   .price-pill.lifetime{ background: rgba(52,211,153,0.12); color: #059669; border-color: rgba(52,211,153,0.3); }
   .price-pill:hover { transform: scale(1.04); filter: brightness(0.95); }
 
-  /* CTA button */
   .btn-buy {
     display: block; width: 100%;
     text-align: center;
@@ -404,7 +394,6 @@
     box-shadow: 0 8px 30px rgba(26,29,46,0.3);
   }
 
-  /* ─── TRUSTED SECTION ─── */
   .trusted {
     padding: 60px 0;
     text-align: center;
@@ -432,7 +421,6 @@
     box-shadow: 0 2px 10px rgba(80,100,160,0.07);
   }
 
-  /* ─── FOOTER ─── */
   footer {
     padding: 40px 0;
     border-top: 1px solid rgba(90,96,128,0.12);
@@ -451,7 +439,6 @@
   }
   .footer-links a:hover { color: var(--accent); }
 
-  /* ─── ANIMATIONS ─── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -461,7 +448,6 @@
   .card:nth-child(2) { animation-delay: 0.2s; }
   .card:nth-child(3) { animation-delay: 0.3s; }
 
-  /* ─── RESPONSIVE ─── */
   @media (max-width: 680px) {
     .hero h1 { letter-spacing: -1px; }
     .hero-stats { gap: 20px; padding: 16px 24px; }
@@ -526,7 +512,7 @@
     <div class="products-grid">
 
       <!-- NimbusDB Studio -->
-      <div class="card featured">
+      <div class="card featured" data-ls-id="1085582">
         <div class="featured-badge">New</div>
         <div class="card-icon clear"><img src="nimbus.png" width="40" height="40" style="border-radius:10px"></div>
         <span class="card-tag">Database Manager</span>
@@ -539,11 +525,15 @@
           <li>Secure Keychain credentials</li>
           <li>Auto-updates</li>
         </ul>
-       <a href="https://asoft-dev.lemonsqueezy.com/checkout/buy/39c97a0c-99d6-4914-9341-94ed2a37c4c6?embed=1" class="btn-buy glass lemonsqueezy-button">Buy NimbusDB Studio</a>
+        <div class="card-pricing" id="price-1085582" style="display:none">
+          <span class="price-main" id="price-main-1085582"></span>
+          <span class="price-period">from</span>
+        </div>
+        <a href="https://asoft-dev.lemonsqueezy.com/checkout/buy/39c97a0c-99d6-4914-9341-94ed2a37c4c6?embed=1" class="btn-buy glass lemonsqueezy-button">Buy NimbusDB Studio</a>
       </div>
 
       <!-- Port Monitor -->
-      <div class="card">
+      <div class="card" data-ls-id="1038716">
         <div class="card-icon clear"><img src="portmonitor.png" width="40" height="40" style="border-radius:12px"></div>
         <span class="card-tag">Network</span>
         <h3>Port Monitor</h3>
@@ -554,11 +544,11 @@
           <li>Favorite ports &amp; alerts</li>
           <li>Lightweight menu bar app</li>
         </ul>
-        <div class="card-pricing">
-          <span class="price-main">€4.99</span>
+        <div class="card-pricing" id="price-1038716" style="display:none">
+          <span class="price-main" id="price-main-1038716"></span>
           <span class="price-period">one-time</span>
         </div>
-         <a href="https://asoft-dev.lemonsqueezy.com/checkout/buy/65cd478d-81a7-4203-9247-4bb9100a7a31?embed=1&discount=0" class="btn-buy glass lemonsqueezy-button">Buy Port Monitor</a>
+        <a href="https://asoft-dev.lemonsqueezy.com/checkout/buy/65cd478d-81a7-4203-9247-4bb9100a7a31?embed=1&discount=0" class="btn-buy glass lemonsqueezy-button">Buy Port Monitor</a>
       </div>
 
       <!-- Envio -->
@@ -623,6 +613,31 @@
     </div>
   </div>
 </footer>
+
+<script>
+  const WORKER_URL = "https://asoftlabs.perlik.workers.dev/";
+
+  async function loadPrices() {
+    try {
+      const res = await fetch(WORKER_URL);
+      if (!res.ok) return;
+      const json = await res.json();
+
+      json.data.forEach((product) => {
+        const priceBlock = document.getElementById("price-" + product.id);
+        const priceMain = document.getElementById("price-main-" + product.id);
+        if (priceBlock && priceMain) {
+          priceMain.textContent = product.price_formatted;
+          priceBlock.style.display = "flex";
+        }
+      });
+    } catch (e) {
+      // тихо игнорируем — цены просто не покажутся
+    }
+  }
+
+  loadPrices();
+</script>
 
 </body>
 </html>
