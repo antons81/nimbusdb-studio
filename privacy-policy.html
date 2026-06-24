@@ -17,8 +17,6 @@
   p { color: #444; margin-bottom: 12px; }
   ul { color: #444; padding-left: 20px; margin-bottom: 12px; }
   ul li { margin-bottom: 6px; }
-  .app-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
-  .app-pill { background: #ede9fe; color: #5b21b6; font-size: 13px; font-weight: 500; padding: 4px 12px; border-radius: 20px; }
   a { color: #7c3aed; text-decoration: none; }
   a:hover { text-decoration: underline; }
   .section { border-bottom: 1px solid #ede9fe; padding-bottom: 24px; margin-bottom: 8px; }
@@ -31,7 +29,7 @@
   <header>
     <div class="brand">aSoft</div>
     <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: May 27, 2026</div>
+    <div class="updated">Last updated: June 20, 2026</div>
   </header>
 
   <div class="intro">
@@ -47,18 +45,31 @@
     <h2>Data we do NOT collect</h2>
     <p>We do not collect, store, or transmit:</p>
     <ul>
-      <li>Your name, email address, or any personal identifiers</li>
+      <li>Your name, email address, or other personal identifiers (unless you contact us directly)</li>
       <li>Your location data</li>
-      <li>Your contacts, photos, or files</li>
-      <li>Your browsing history or app usage patterns</li>
-      <li>Any data that can identify you personally</li>
+      <li>Your contacts, photos, or files (unless an app explicitly needs local access for its core feature — in that case, processing stays on your device)</li>
+      <li>Your browsing history</li>
+      <li>Advertising identifiers (IDFA) for cross-app tracking</li>
     </ul>
   </div>
 
   <div class="section">
+    <h2>Analytics</h2>
+    <p>Some of our apps may use privacy-focused analytics to understand how features are used and to improve the product. This applies only to apps where analytics is enabled — not every app collects this data.</p>
+    <p>When used, analytics may include <strong>anonymous product interaction events</strong>, such as:</p>
+    <ul>
+      <li>That the app was opened</li>
+      <li>Which features or screens were used</li>
+      <li>That a core action was completed (e.g. a calculation, scan, or purchase flow — without the underlying content)</li>
+    </ul>
+    <p>We use providers that prioritize privacy (e.g. <a href="https://aptabase.com" target="_blank" rel="noopener">Aptabase</a>). Analytics data is used <strong>only for product improvement</strong>, is <strong>not linked to your identity</strong>, is <strong>not used for advertising</strong>, is <strong>not shared with data brokers</strong>, and is <strong>not sold</strong>. These analytics do not use the Identifier for Advertisers (IDFA) and do not require Apple's App Tracking Transparency (ATT) permission.</p>
+    <p>Each app's App Store privacy label describes exactly what that app collects. If an app does not list analytics data, it does not collect it.</p>
+  </div>
+
+  <div class="section">
     <h2>Data stored on your device</h2>
-    <p>Some apps store preferences and settings locally on your device using standard iOS/macOS mechanisms (UserDefaults, Keychain). This data never leaves your device and is only used to provide app functionality.</p>
-    <p>Examples include: selected theme, sound preferences, game progress, and license information.</p>
+    <p>Apps may store preferences, settings, progress, or content locally on your device using standard iOS/macOS mechanisms (UserDefaults, Keychain, local files). This data is used to provide app functionality.</p>
+    <p>Unless an app explicitly offers optional cloud sync (see below), this data stays on your device.</p>
   </div>
 
   <div class="section">
@@ -67,23 +78,24 @@
   </div>
 
   <div class="section">
+    <h2>On-device processing</h2>
+    <p>Some apps process data entirely on your device — for example local calculations, game logic, motion input, or on-device AI. In those cases, the relevant data is not sent to aSoft servers for processing or storage.</p>
+  </div>
+
+  <div class="section">
     <h2>Game Center</h2>
-    <p>AirBreaker integrates with Apple Game Center for leaderboards and achievements. Game Center data is governed by Apple's Privacy Policy. We only submit scores and achievement progress — no personal data.</p>
+    <p>Apps that integrate with Apple Game Center submit scores and achievement progress as required by that feature. Game Center data is governed by Apple's Privacy Policy.</p>
   </div>
 
   <div class="section">
     <h2>In-App Purchases</h2>
-    <p>Purchases are processed entirely by Apple via the App Store or by Lemon Squeezy for direct sales. We do not receive or store your payment information. For Lemon Squeezy purchases, their Privacy Policy applies.</p>
+    <p>Purchases are processed entirely by Apple via the App Store or by Lemon Squeezy for direct sales. We do not receive or store your payment card details. For Lemon Squeezy purchases, their Privacy Policy applies.</p>
+    <p>We may receive confirmation that a purchase was made (via StoreKit or equivalent) to unlock features on your device.</p>
   </div>
 
   <div class="section">
     <h2>Advertising (future versions)</h2>
-    <p>Some apps may display ads provided by third-party networks (Google AdMob). These networks may collect device identifiers and usage data to serve relevant ads, subject to your device's privacy settings. You can opt out by purchasing the Pro version to remove all ads.</p>
-  </div>
-
-  <div class="section">
-    <h2>Motion data (AirBreaker)</h2>
-    <p>AirBreaker optionally uses head motion data from AirPods via Apple's Core Motion framework (CMHeadphoneMotionManager) to control gameplay. This data is processed locally on your device in real time and is never stored or transmitted anywhere.</p>
+    <p>Some apps may display ads provided by third-party networks (e.g. Google AdMob). Those networks may collect device identifiers and usage data to serve ads, subject to your device's privacy settings. Where offered, a paid version may remove ads.</p>
   </div>
 
   <div class="section">
