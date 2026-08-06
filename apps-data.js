@@ -2,7 +2,7 @@ window.APP_CATALOG = [
   {
     id: "haltewecker",
     name: "HalteWecker",
-    icon: "assets/icons/haltewecker.jpg",
+    icon: "assets/icons/haltewecker.png",
     accent: "#dd765c",
     accentSoft: "#f6d9cc",
     platforms: ["iphone"],
