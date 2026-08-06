@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f1e8">
+  <meta name="description" content="Impressum von aSoftLabs.">
+  <title>Impressum — aSoftLabs</title>
+
+  <link rel="icon" href="assets/icons/asoft-logo.png">
+  <link rel="stylesheet" href="styles.css?v=20260715-2">
+</head>
+
+<body>
+  <div class="page-background" aria-hidden="true">
+    <span class="glow glow-one"></span>
+    <span class="glow glow-two"></span>
+    <span class="glow glow-three"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-content">
+      <a class="brand" href="/" aria-label="aSoftLabs home">
+        <img
+          src="assets/icons/asoft-logo.png"
+          alt=""
+          width="44"
+          height="44"
+        >
+        <span>aSoftLabs</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation">
+        <a href="/">Home</a>
+        <a href="mailto:info@asoftlabs.app">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container legal-page">
+      <p class="eyebrow">
+        <span></span>
+        <span>Legal</span>
+      </p>
+
+      <h1>Impressum</h1>
+
+      <div class="legal-content">
+        <section>
+          <h2>Angaben zum Anbieter</h2>
+
+          <p>
+            Anton Stremovskiy<br>
+            aSoftLabs
+          </p>
+        </section>
+
+        <section>
+          <h2>Kontakt</h2>
+
+          <p>
+            E-Mail:
+            <a href="mailto:info@asoftlabs.app">
+              info@asoftlabs.app
+            </a>
+          </p>
+        </section>
+
+        <section>
+          <h2>Verantwortlich für den Inhalt</h2>
+
+          <p>
+            Anton Stremovskiy
+          </p>
+        </section>
+
+        <section>
+          <h2>Hinweis</h2>
+
+          <p>
+            aSoftLabs entwickelt und veröffentlicht unabhängige
+            Software und Apps für Apple-Plattformen.
+          </p>
+        </section>
+      </div>
+
+      <div class="legal-actions">
+        <a class="button button-secondary" href="/">
+          Zurück zu aSoftLabs
+        </a>
+
+        <a
+          class="button button-primary"
+          href="mailto:info@asoftlabs.app"
+        >
+          Kontakt
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img
+          src="assets/icons/asoft-logo.png"
+          alt=""
+          width="36"
+          height="36"
+        >
+
+        <div>
+          <strong>aSoftLabs</strong>
+          <span>Independent apps for Apple platforms.</span>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:info@asoftlabs.app">Support</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/impressum.html">Impressum</a>
+      </div>
+
+      <p class="copyright">
+        © <span id="copyrightYear"></span> aSoft — Anton Stremovskiy.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("copyrightYear").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
